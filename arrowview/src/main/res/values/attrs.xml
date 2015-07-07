@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArrowView">
+        <attr name="av_lineColor" format="color"/>
+        <attr name="av_spin" format="string"/>
+    </declare-styleable>
+</resources>
