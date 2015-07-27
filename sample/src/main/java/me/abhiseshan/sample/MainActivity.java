@@ -16,10 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("");
-        setSupportActionBar(toolbar);
-
         final ArrowView outwards = (ArrowView) findViewById(R.id.arrowViewOutward);
         outwards.setOnClickListener(new View.OnClickListener() {
             @Override

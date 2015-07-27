@@ -5,33 +5,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-    app:theme="@style/AppTheme">
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
         <me.abhiseshan.arrowview.ArrowView
             android:layout_gravity="center_vertical"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
             android:id="@+id/arrowViewOutward"
             app:av_lineColor="#0009ff"
+            app:av_stroke="15"
             app:av_spin="outward"/>
 
         <me.abhiseshan.arrowview.ArrowView
             android:layout_gravity="center_vertical"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:paddingBottom="5dp"
+            android:layout_marginTop="20dp"
             android:paddingTop="5dp"
             android:id="@+id/arrowViewInward"
             app:av_lineColor="#ff2900"
+            app:av_stroke="10"
             app:av_spin="inward"/>
-    </android.support.v7.widget.Toolbar>
+    </LinearLayout>
 </RelativeLayout>
