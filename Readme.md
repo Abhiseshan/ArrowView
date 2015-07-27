@@ -29,10 +29,8 @@ Via XML
         app:av_stroke="10"
         app:av_spin="inward"/>
 ```
-
-Note that you can define the color with `lineColor`
-
-toggle in code:
+Via CODE <BR><BR>
+Toggle State
 ```
     final ArrowView arrowView = (ArrowView) findViewById(R.id.sample_arrow_view);
     arrowView.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +50,7 @@ arrowView.upArrow();
 arrowView.downArrow();
 ```
 
-Optionally these actions can also be done with Animation Duration
+Optionally states can also be set with Animation Duration
 
 ```
 arrowView.toggle(1000);
@@ -60,6 +58,24 @@ arrowView.toggle(1000);
 arrowView.upArrow(800);
 
 arrowView.downArrow(1600);
+```
+
+Programatically setting attributes
+
+```
+// Set the color of the arrowView
+arrowView.setColor(int color); 
+
+/*
+    Sets the spin of the arrowView.
+    Takes the arguements 
+        SPIN_OUTWARD (Blue Arrow)
+        SPIN_INWARD (Red Arrow)
+*/
+arrowView.setSpin();
+
+// Set the stroke of the lines in the ArrowView
+arrowView.setStroke(int stroke);
 ```
 
 Forked from CrossView
