@@ -48,7 +48,7 @@ public class ArrowView extends View {
     private static final long ANIMATION_DURATION_MS = 300l;
 
     private static final int DEFAULT_COLOR = Color.BLACK;
-    private static final float DEFAULT_STROKE_WIDTH = 8f;
+    private float DEFAULT_STROKE_WIDTH = 8f;
 
     // Arcs that define the set of all points between which the two lines are drawn
     // Names (top, bottom, etc) are from the reference point of the "downArrow" configuration.
@@ -223,6 +223,14 @@ public class ArrowView extends View {
         return spinType;
     }
 
+    public void setStroke(float stroke){
+        DEFAULT_STROKE_WIDTH = stroke;
+    }
+
+    public float getStroke(){
+        return DEFAULT_STROKE_WIDTH;
+    }
+    
     /**
      * Tell this view to switch states from upArrow to downArrow, or back, using the default animation duration.
      * @return an integer flag that represents the new state after toggling.
